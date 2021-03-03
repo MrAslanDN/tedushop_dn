@@ -49,11 +49,32 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TeduShop.Common\TeduShop.Common.csproj">
+      <Project>{2283ae37-3702-4e62-9ac3-0ff81144a43d}</Project>
+      <Name>TeduShop.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeduShop.Data\TeduShop.Data.csproj">
+      <Project>{6c5320bb-8128-4b2c-b783-697e6ba651d6}</Project>
+      <Name>TeduShop.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeduShop.Model\TeduShop.Model.csproj">
+      <Project>{9520cc3d-03c0-4d42-a551-3bcc0f82dfb0}</Project>
+      <Name>TeduShop.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeduShop.Service\TeduShop.Service.csproj">
+      <Project>{ddeacc05-a5e5-4ec0-a0fc-c470018b0363}</Project>
+      <Name>TeduShop.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeduShop.Web\TeduShop.Web.csproj">
+      <Project>{97206dd3-b854-4be1-849e-c2b93f2fcc33}</Project>
+      <Name>TeduShop.Web</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
